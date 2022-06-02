@@ -5,4 +5,20 @@
 
 <button (click)="isWarning = !isWarning">Toggle Warning</button>
 
-<div class="box"></div>
+<!-- <div
+  class="box"
+  [class.red-border]="isDanger"
+  [class.yellow-background]="isWarning"
+></div> -->
+
+<!-- [class.tên-class]
+     [class] = "array" 
+     [class] = "object" {[tên-class: string | boolean]} 
+     [class] = "variable"-->
+
+<!-- <div
+  class="box"
+  [class]="{ 'red-border': isDanger, 'yellow-background': isWarning }"
+></div> -->
+
+<div [class]="classes"></div>
